@@ -1,0 +1,189 @@
+:root {
+    --main-color:#ED4C5C;
+    --secondary-color:#F5F4F4;
+    --page-left-padding:59px;
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+    display:block;
+    margin:0;
+    padding:0;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family: Calibri;
+}
+
+a{
+    text-decoration: inherit;
+    color:inherit;
+    cursor:pointer;
+}
+button{
+    cursor: pointer;
+}
+header{
+    background:var(--main-color);
+    color:white;
+    padding:49px 0 0 60px;
+}
+.section-carousel{
+    color:white;
+}
+.logo{
+    margin-top:0;
+    display:flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-image{
+    margin-right:8px;
+    background-image:url('./images/svg/cloud.svg');
+    width:30px;
+    height:30px;
+    background-repeat: no-repeat;
+}
+.btn-signup{
+    margin-top:40px;
+    height:45px;
+    font-size: 12px;
+    font-weight: bold;
+    color:var(--main-color);
+    width:145px;
+    border-radius:6px;
+    border:none;
+    background:white;
+}
+
+.section-carousel{
+    padding:49px var(--page-left-padding);
+    background:var(--main-color);
+    height:400px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.navigation a{
+    margin-right:24px;
+}
+.navigation a:hover{
+    color:rgb(179, 179, 179);
+}
+.carousel-image{
+    padding:0 34px;
+}
+
+.section-usage{
+    padding:40px 0;
+    margin-left: var(--page-left-padding);
+}
+.section-usage a{
+    color:var(--main-color);
+}
+.main-content{
+    width:445px;
+    font-size:15px;
+    margin-bottom: 20px;
+}
+.main-content h1{
+    font-size: 36px;
+}
+.image-options{
+    margin-top:60px;
+}
+.image-options img{
+    margin-right:30px;
+}
+.image-options button:after{
+    content:"";
+    position:absolute;
+    margin-right:auto;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    background-image: url('./images/woman-with-phone.png');
+    background-repeat: no-repeat;
+    background-position: top left; 
+    padding-bottom:100%;
+}
+.inner-section-images{
+    padding-top:40px;
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+}
+.image-container{
+    display:flex;
+    flex-direction: column;
+    margin-right: 30px;
+    position:relative;
+}
+.image-container button{
+    position: absolute;
+    bottom:0;
+    width:100%;
+    background:white;
+    box-shadow: 0px 0 8px rgba(0, 0, 0, 0.25);
+    height:38px;
+    border-radius:8px;
+    border:none;
+    color:var(--main-color);
+    font-weight:bold;
+}
+
+.section-technology{
+    height:540px;
+    background:var(--secondary-color)
+}
+.section-technology h1{
+    padding-top:50px;
+    margin-left:70px;
+}
+.technology-container{
+    margin-top:50px;
+    display:flex;
+    padding-left:var(--page-left-padding);
+}
+.technology-piece{
+    padding:40px 10px 20px 10px;
+    text-align: center;
+    background:white;
+    margin-right:30px;
+    width: 240px;
+}
+.technology-piece h4{
+    margin-bottom:5px;
+}
+.technology-piece p{
+    font-size:small;
+}
+.piece-image-container{
+    height:80px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    height:60px;
+    display: flex;
+    background:var(--main-color);
+    color:white;
+    align-items: center;
+    padding-left:var(--page-left-padding);
+}
+
+footer h2{
+    font-weight:normal;
+}
+.icon{
+    margin-right:20px;
+}
+.apple,.google{
+    width:30px;
+}
+.windows{
+    width:24px;
+    margin-right:75px;
+}
