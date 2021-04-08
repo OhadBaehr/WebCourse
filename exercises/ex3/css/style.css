@@ -15,6 +15,9 @@ a{
     color:white;
     text-decoration: none;
 }
+a:hover{
+    color:#c38c58
+}
 li{
     list-style: none;
 }
