@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap' rel='stylesheet'>
+    <title>Login</title>
+</head>
+
+<body>
+    <!-- <h1>WhatsGod</h1> -->
+    <div class="wrapper">
+        <br>
+        <span id="logo"></span>
+        <h1>WhatsGod</h1>
+        <form id="login" name="login" action="./server.php" method="GET" target="dummyframe">
+            <br>
+            <label for="username">Username: </label>
+            <br>
+            <input type="text" name="username" title="Legal Digits: [A-Z],[a-z],[0-9], '.', '-'" autocomplete required>
+            <br>
+            <label for="pass">Password: </label>
+            <br>
+            <input type="password" name="pass" autocomplete required>
+            <!--  -->
+            <br>
+            <a id="forgot" href="#">Forgot Your Password ?</a>
+            <br>
+            <input class="submit" type="submit" name="submit" value="login">
+        </form>
+        <br>
+        <h4>New to WhatsGod?!</h4>
+        <br>
+        <button id="new-user">Create New Account</button>
+        <br>
+        <br>
+        <form id="reg-form" name="register" action="./server.php" method="GET">
+            <!-- onClick Show: -->
+            <label for="reg-username">Username: </label>
+            <br>
+            <input type="text" name="reg-username" title="Legal Digits: [A-Z],[a-z],[0-9], '.', '-'" autocomplete
+                required>
+            <br>
+            <label for="reg-mail">E-mail: </label>
+            <br>
+            <input type="email" name="reg-mail" autocomplete required>
+            <br>
+            <label for="reg-pass">Password: </label>
+            <br>
+            <input type="password" name="reg-pass" autocomplete required>
+            <br>
+            <input class="submit" type="submit" name="submit" value="register" >
+            <!-- End Show -->
+            <br>
+        </form>
+    </div>
+    <footer>&copy;2021, Ido Dor & Ohad Baehr. All rights reserved.</footer>
+    <script src="./js/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/less@3.13"></script>
+</body>
+
+</html>
